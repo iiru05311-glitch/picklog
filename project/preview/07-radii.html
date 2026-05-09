@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Radii</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; }
+  body { background: var(--paper-1); padding: 22px; font-family: var(--font-body); }
+  .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .box { width: 72px; height: 72px; background: var(--paper-0); border: 1px solid var(--line); }
+  .name { font: var(--t-micro); color: var(--ink-2); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+  .px { font: var(--t-micro); color: var(--ink-3); font-family: var(--font-mono); }
+</style>
+</head>
+<body class="pl-paper">
+  <div class="grid">
+    <div class="item"><div class="box" style="border-radius: 6px;"></div><div class="name">xs</div><div class="px">6</div></div>
+    <div class="item"><div class="box" style="border-radius: 10px;"></div><div class="name">sm</div><div class="px">10</div></div>
+    <div class="item"><div class="box" style="border-radius: 14px;"></div><div class="name">md</div><div class="px">14</div></div>
+    <div class="item"><div class="box" style="border-radius: 20px;"></div><div class="name">lg</div><div class="px">20</div></div>
+    <div class="item"><div class="box" style="border-radius: 28px;"></div><div class="name">xl</div><div class="px">28</div></div>
+    <div class="item"><div class="box" style="border-radius: 999px;"></div><div class="name">pill</div><div class="px">999</div></div>
+  </div>
+</body>
+</html>

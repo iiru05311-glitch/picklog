@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Type · Body</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; }
+  body { background: #FFFFFF; padding: 24px 32px; font-family: var(--font-body); color: var(--ink-1); }
+  .row { display: flex; align-items: baseline; gap: 16px; }
+  .label { font: var(--t-micro); color: var(--ink-3); width: 100px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .stack { display: flex; flex-direction: column; gap: 10px; }
+  .h2 { font: var(--t-h2); font-weight: 600; }
+  .h3 { font: var(--t-h3); font-weight: 600; }
+  .body { font: var(--t-body); color: var(--ink-1); }
+  .body-sm { font: var(--t-body-sm); color: var(--ink-2); }
+  .meta { font: var(--t-meta); color: var(--ink-3); letter-spacing: 0.02em; }
+</style>
+</head>
+<body>
+  <div class="stack">
+    <div class="row"><div class="label">H2 / 22 · 600</div><div class="h2">보관함</div></div>
+    <div class="row"><div class="label">H3 / 18 · 600</div><div class="h3">저장 랭킹</div></div>
+    <div class="row"><div class="label">Body / 15</div><div class="body">새로 저장한 링크가 12개 있습니다.</div></div>
+    <div class="row"><div class="label">Body sm / 13</div><div class="body-sm">@influencer_1 · 2시간 전</div></div>
+    <div class="row"><div class="label">Meta / 12</div><div class="meta">187 팔로워 · 197 팔로잉</div></div>
+  </div>
+</body>
+</html>

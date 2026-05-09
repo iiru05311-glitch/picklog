@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Toast & Badge</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; }
+  body { background: #F4F4F4; padding: 28px 24px; font-family: var(--font-body); display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+  .toast { display: inline-flex; align-items: center; gap: 10px; background: #FFFFFF; color: var(--ink-1); padding: 12px 18px; border-radius: var(--r-pill); font: var(--t-body-sm); font-weight: 500; box-shadow: var(--sh-3); border: 1px solid var(--line-soft); }
+  .toast .check { width: 18px; height: 18px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; }
+  .toast .check svg { width: 11px; height: 11px; stroke: var(--paper-0); }
+  .badge-row { display: flex; gap: 8px; align-items: center; }
+  .badge { font: var(--t-micro); font-weight: 600; padding: 3px 9px; border-radius: var(--r-pill); }
+  .b-accent { color: var(--accent); background: var(--accent-soft); }
+  .b-ink { color: var(--ink-1); background: #FFFFFF; border: 1px solid var(--line-soft); }
+  .b-ghost { color: var(--ink-2); border: 1px solid var(--line); background: var(--paper-0); }
+  .count { display: inline-flex; align-items: center; justify-content: center; min-width: 18px; height: 18px; padding: 0 6px; border-radius: var(--r-pill); background: var(--accent); color: var(--paper-0); font: var(--t-micro); font-weight: 700; font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+  <div class="toast">
+    <span class="check"><svg fill="none" stroke-width="2.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></span>
+    저장됨
+  </div>
+  <div class="badge-row">
+    <span class="badge b-accent">D-5</span>
+    <span class="badge b-ink">NEW</span>
+    <span class="badge b-ghost">팔로잉</span>
+    <span class="count">3</span>
+    <span class="count" style="background: #FFFFFF; color: var(--ink-1); border: 1px solid var(--line-soft);">12</span>
+  </div>
+</body>
+</html>

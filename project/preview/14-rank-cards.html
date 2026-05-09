@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Rank Card</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap");
+  html, body { margin: 0; }
+  body { background: var(--paper-1); padding: 22px 24px; font-family: var(--font-body); }
+  .row { display: flex; align-items: center; gap: 14px; padding: 12px 14px; background: var(--paper-0); border: 1px solid var(--line-soft); border-radius: var(--r-lg); box-shadow: var(--sh-1); }
+  .row + .row { margin-top: 8px; }
+  .rank { font-family: "Manrope", "Pretendard", sans-serif; font-size: 14px; font-weight: 600; color: var(--ink-2); width: 24px; text-align: center; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+  .rank.top { color: var(--accent); }
+  .thumb { width: 52px; height: 52px; border-radius: var(--r-md); background: var(--paper-2); flex-shrink: 0; }
+  .body { flex: 1; min-width: 0; }
+  .name { font: var(--t-body); font-weight: 600; color: var(--ink-1); }
+  .by { font: var(--t-meta); color: var(--ink-3); margin-top: 2px; }
+  .dday { font: var(--t-micro); font-weight: 600; color: var(--accent); border: 1px solid var(--accent-soft); background: var(--accent-soft); padding: 4px 10px; border-radius: var(--r-pill); font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body class="pl-paper">
+  <div class="row">
+    <div class="rank top">1</div>
+    <div class="thumb"></div>
+    <div class="body"><div class="name">실키 글로우 쿠션</div><div class="by">@influencer_1</div></div>
+    <div class="dday">D-5</div>
+  </div>
+  <div class="row">
+    <div class="rank top">2</div>
+    <div class="thumb"></div>
+    <div class="body"><div class="name">데일리 베이지 머플러</div><div class="by">@influencer_2</div></div>
+    <div class="dday">D-1</div>
+  </div>
+  <div class="row">
+    <div class="rank">3</div>
+    <div class="thumb"></div>
+    <div class="body"><div class="name">무설탕 그릭요거트</div><div class="by">@influencer_3</div></div>
+    <div class="dday">D-8</div>
+  </div>
+</body>
+</html>

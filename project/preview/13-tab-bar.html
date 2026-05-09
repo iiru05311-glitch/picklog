@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Tab Bar</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; }
+  body { background: var(--paper-2); padding: 32px 28px; font-family: var(--font-body); display: flex; align-items: center; justify-content: center; }
+  .bar { width: 100%; max-width: 414px; height: 72px; background: var(--paper-0); border-top: 1px solid var(--line-soft); display: grid; grid-template-columns: repeat(5, 1fr); align-items: center; position: relative; box-shadow: var(--sh-2); border-radius: 24px 24px 0 0; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 4px; color: var(--ink-3); }
+  .item.on { color: var(--ink-1); }
+  .item svg { width: 22px; height: 22px; stroke: currentColor; }
+  .item .lbl { font: var(--t-micro); font-weight: 500; }
+  .fab { position: absolute; left: 50%; top: -22px; transform: translateX(-50%); width: 56px; height: 56px; border-radius: 50%; background: var(--ink-1); color: var(--paper-0); display: flex; align-items: center; justify-content: center; box-shadow: var(--sh-3); }
+  .fab svg { width: 22px; height: 22px; stroke: currentColor; }
+  .fab + .lbl { font: var(--t-micro); color: var(--ink-3); position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); }
+</style>
+</head>
+<body>
+  <div class="bar">
+    <div class="item on">
+      <svg fill="none" stroke-width="1.75" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m3 12 9-9 9 9"/><path d="M5 10v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10"/></svg>
+      <span class="lbl">홈</span>
+    </div>
+    <div class="item">
+      <svg fill="none" stroke-width="1.75" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <span class="lbl">검색</span>
+    </div>
+    <div></div>
+    <div class="item">
+      <svg fill="none" stroke-width="1.75" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m6 3 12 0a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg>
+      <span class="lbl">보관함</span>
+    </div>
+    <div class="item">
+      <svg fill="none" stroke-width="1.75" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+      <span class="lbl">마이</span>
+    </div>
+    <div class="fab">
+      <svg fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+    </div>
+    <span class="lbl" style="position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); font-size: 11px; color: var(--ink-3);">저장</span>
+  </div>
+</body>
+</html>

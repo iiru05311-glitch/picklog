@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Inputs</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; }
+  body { background: var(--paper-1); padding: 22px 24px; font-family: var(--font-body); }
+  .stack { display: flex; flex-direction: column; gap: 10px; max-width: 460px; }
+  .field { display: flex; flex-direction: column; gap: 4px; }
+  .label { font: var(--t-micro); color: var(--ink-3); letter-spacing: 0.04em; text-transform: uppercase; }
+  .input { height: 44px; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--paper-0); padding: 0 14px; font: var(--t-body); color: var(--ink-1); outline: none; transition: all var(--t-base) var(--ease-out); }
+  .input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .input::placeholder { color: var(--ink-4); }
+  .search { position: relative; }
+  .search .input { padding-left: 38px; }
+  .search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; stroke: var(--ink-3); }
+  .pill-tabs { display: inline-flex; background: var(--paper-2); padding: 4px; border-radius: var(--r-pill); gap: 2px; }
+  .pill-tabs button { border: none; background: transparent; padding: 8px 18px; border-radius: var(--r-pill); font: var(--t-body-sm); font-weight: 600; color: var(--ink-3); cursor: pointer; }
+  .pill-tabs button.on { background: var(--paper-0); color: var(--ink-1); box-shadow: var(--sh-1); }
+</style>
+</head>
+<body class="pl-paper">
+  <div class="stack">
+    <div class="search">
+      <svg fill="none" stroke-width="1.75" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input class="input" placeholder="링크 또는 사용자 검색">
+    </div>
+    <div class="field">
+      <span class="label">링크 URL</span>
+      <input class="input" value="https://example.com/item/blush" autofocus>
+    </div>
+    <div class="pill-tabs">
+      <button class="on">상품 저장</button>
+      <button>링크 저장</button>
+    </div>
+  </div>
+</body>
+</html>

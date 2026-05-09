@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Colors · Accent</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; }
+  body { background: #FFFFFF; padding: 24px 28px; font-family: var(--font-body); color: var(--ink-1); }
+  .row { display: flex; gap: 18px; align-items: center; }
+  .swatch { width: 96px; height: 96px; border-radius: 20px; box-shadow: 0 6px 16px rgba(236, 106, 156, 0.22); }
+  .info { flex: 1; }
+  .info .role { font: var(--t-meta); color: var(--ink-3); letter-spacing: 0.06em; text-transform: uppercase; }
+  .info .name { font: var(--t-h3); font-weight: 600; color: var(--ink-1); margin-top: 2px; }
+  .info .desc { font: var(--t-body-sm); color: var(--ink-2); margin-top: 4px; max-width: 360px; }
+  .swatches { display: flex; gap: 10px; margin-top: 14px; }
+  .mini { width: 32px; height: 32px; border-radius: 10px; border: 1px solid #EFEDE7; position: relative; }
+  .mini::after { content: attr(data-l); position: absolute; bottom: -16px; left: 0; right: 0; text-align: center; font-size: 10px; color: #8C8170; font-family: ui-monospace, Menlo, monospace; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="swatch" style="background: #EC6A9C;"></div>
+    <div class="info">
+      <div class="role">single accent · pink</div>
+      <div class="name">--accent · #EC6A9C</div>
+      <div class="desc">알림 카운트, primary CTA, 활성 탭, 손글씨 라벨에만. 그 외 어디에도 쓰지 않음.</div>
+    </div>
+  </div>
+  <div class="swatches">
+    <div class="mini" style="background: #FCE4EE;" data-l="soft"></div>
+    <div class="mini" style="background: #EC6A9C;" data-l="base"></div>
+    <div class="mini" style="background: #D6517F;" data-l="press"></div>
+    <div class="mini" style="background: #8B2D54;" data-l="ink"></div>
+  </div>
+</body>
+</html>

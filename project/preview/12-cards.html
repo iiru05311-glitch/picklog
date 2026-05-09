@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Cards</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; }
+  body { background: var(--paper-1); padding: 22px 24px; font-family: var(--font-body); }
+  .grid { display: grid; grid-template-columns: 220px 1fr; gap: 16px; }
+  .card { background: var(--paper-0); border: 1px solid var(--line-soft); border-radius: var(--r-lg); box-shadow: var(--sh-1); padding: 14px; }
+  .thumb { aspect-ratio: 1.6 / 1; background: var(--paper-2); border-radius: var(--r-md); margin-bottom: 12px; display: flex; align-items: center; justify-content: center; color: var(--ink-4); }
+  .title { font: var(--t-h3); color: var(--ink-1); font-weight: 600; margin: 0; }
+  .meta { font: var(--t-meta); color: var(--ink-3); margin-top: 4px; }
+  .row { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--line-soft); border-radius: var(--r-md); background: var(--paper-0); box-shadow: var(--sh-1); }
+  .row + .row { margin-top: 8px; }
+  .row .thumb-sm { width: 44px; height: 44px; border-radius: 10px; background: var(--paper-2); flex-shrink: 0; }
+  .row .info { flex: 1; min-width: 0; }
+  .row .info .t { font: var(--t-body); font-weight: 600; color: var(--ink-1); }
+  .row .info .s { font: var(--t-meta); color: var(--ink-3); }
+  .badge { font: var(--t-micro); font-weight: 600; color: var(--accent); background: var(--accent-soft); padding: 3px 8px; border-radius: var(--r-pill); }
+</style>
+</head>
+<body class="pl-paper">
+  <div class="grid">
+    <div class="card">
+      <div class="thumb">
+        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>
+      </div>
+      <h4 class="title">무설탕 그릭요거트</h4>
+      <p class="meta">@influencer_1 · 식품</p>
+    </div>
+    <div>
+      <div class="row">
+        <div class="thumb-sm"></div>
+        <div class="info"><div class="t">인기아이템 1</div><div class="s">@influencer_1</div></div>
+        <div class="badge">D-5</div>
+      </div>
+      <div class="row">
+        <div class="thumb-sm"></div>
+        <div class="info"><div class="t">인기아이템 2</div><div class="s">@influencer_2</div></div>
+        <div class="badge">D-1</div>
+      </div>
+      <div class="row">
+        <div class="thumb-sm"></div>
+        <div class="info"><div class="t">인기아이템 3</div><div class="s">@influencer_3</div></div>
+        <div class="badge">D-8</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

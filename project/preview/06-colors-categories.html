@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Colors · Categories</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; }
+  body { background: var(--paper-1); padding: 24px 28px; font-family: var(--font-body); color: var(--ink-1); }
+  .list { background: var(--paper-0); border: 1px solid var(--line-soft); border-radius: var(--r-lg); box-shadow: var(--sh-1); }
+  .row { display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--line-soft); }
+  .row:last-child { border-bottom: none; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .name { font: var(--t-body); color: var(--ink-1); flex: 1; }
+  .count { font: var(--t-body-sm); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .arrow { color: var(--ink-4); font-size: 14px; }
+</style>
+</head>
+<body class="pl-paper">
+  <div class="list">
+    <div class="row"><div class="dot" style="background: #C98B8B;"></div><div class="name">패션</div><div class="count">12</div><div class="arrow">›</div></div>
+    <div class="row"><div class="dot" style="background: #92B09C;"></div><div class="name">뷰티</div><div class="count">7</div><div class="arrow">›</div></div>
+    <div class="row"><div class="dot" style="background: #8FA3BF;"></div><div class="name">식품</div><div class="count">2</div><div class="arrow">›</div></div>
+    <div class="row"><div class="dot" style="background: #D6BD7F;"></div><div class="name">기타</div><div class="count">0</div><div class="arrow">›</div></div>
+  </div>
+</body>
+</html>

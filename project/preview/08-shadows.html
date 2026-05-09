@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Shadows</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; }
+  body { background: var(--paper-1); padding: 32px 24px; font-family: var(--font-body); }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .box { width: 92px; height: 64px; background: var(--paper-0); border: 1px solid var(--line-soft); border-radius: var(--r-md); }
+  .name { font: var(--t-meta); color: var(--ink-2); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+  .desc { font: var(--t-micro); color: var(--ink-3); }
+</style>
+</head>
+<body class="pl-paper">
+  <div class="grid">
+    <div class="item"><div class="box" style="box-shadow: var(--sh-1);"></div><div class="name">sh-1</div><div class="desc">rest</div></div>
+    <div class="item"><div class="box" style="box-shadow: var(--sh-2);"></div><div class="name">sh-2</div><div class="desc">raised</div></div>
+    <div class="item"><div class="box" style="box-shadow: var(--sh-3);"></div><div class="name">sh-3</div><div class="desc">modal</div></div>
+    <div class="item"><div class="box" style="box-shadow: var(--sh-lift);"></div><div class="name">sh-lift</div><div class="desc">sheet</div></div>
+  </div>
+</body>
+</html>
