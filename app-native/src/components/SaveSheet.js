@@ -153,10 +153,10 @@ export function PillTabs({ options, value, onChange }) {
       {options.map(o => (
         <Pressable
           key={o.key}
-          style={[pillStyles.btn, value === o.key && pillStyles.btnOn]}
+          style={[pillStyles.btn, value === o.key ? pillStyles.btnOn : null]}
           onPress={() => onChange(o.key)}
         >
-          <Text style={[pillStyles.text, value === o.key && pillStyles.textOn]}>{o.label}</Text>
+          <Text style={[pillStyles.text, value === o.key ? pillStyles.textOn : null]}>{o.label}</Text>
         </Pressable>
       ))}
     </View>
