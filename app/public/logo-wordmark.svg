@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" fill="none">
+  <text x="0" y="46" font-family="Instrument Serif, serif" font-size="44" font-style="italic" fill="#1F1A14">Pick</text>
+  <circle cx="105" cy="38" r="3" fill="#B85B3D"></circle>
+  <text x="118" y="46" font-family="Instrument Serif, serif" font-size="44" font-style="italic" fill="#1F1A14">Log</text>
+</svg>
